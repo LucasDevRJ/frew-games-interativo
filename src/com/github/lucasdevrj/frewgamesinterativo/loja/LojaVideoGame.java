@@ -75,6 +75,12 @@ public class LojaVideoGame {
 		
 		System.out.print("Digite a opção desejada: ");
 		int opcao = entrada.nextInt();
+		
+		switch (opcao) {
+			case 1:
+				
+			break;
+		}
 	}
 	
 	public String getNome() {
