@@ -1,11 +1,15 @@
 package com.github.lucasdevrj.frewgamesinterativo.loja;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
 
 public class LojaVideoGame {
 
 	private String nome;
 	private String endereco;
+	ArrayList<Jogo> jogos = new ArrayList<Jogo>();
 	
 	Scanner entrada = new Scanner(System.in);
 	
@@ -21,7 +25,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 2 - Consoles.");
 		System.out.println("Opção 3 - Acessórios.");
 		System.out.println("Opção 4 - Comprar.");
-		System.out.println("Opção 5 - Sair.");
+		System.out.println("Opção 5 - Ver carrinho.");
 		
 		System.out.print("Digite a sua opção: ");
 		int opcao = entrada.nextInt();
@@ -78,6 +82,24 @@ public class LojaVideoGame {
 		
 		switch (opcao) {
 			case 1:
+				System.out.println("Deseja adicionar o jogo no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Volta para o menu principal.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					System.out.println("Jogo adicionado no carrinho!");
+					Jogo jogo = new Jogo("Grand Theft Auto V", "10/05/2015", "TAKE-TWO", "PlayStation");
+					this.getJogos().add(jogo);
+					
+				} else if (opcao == 2) {
+					exibeMenu();
+					
+				} else {
+					System.out.println("Opção inválida!");
+					exibeJogosPlayStation3();
+				}
 				
 			break;
 		}
@@ -97,5 +119,9 @@ public class LojaVideoGame {
 	
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
+	}
+	
+	public ArrayList<Jogo> getJogos() {
+		return jogos;
 	}
 }

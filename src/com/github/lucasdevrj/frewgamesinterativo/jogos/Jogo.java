@@ -4,6 +4,15 @@ public class Jogo {
 
 	private String nome;
 	private String dataLancamento;
+	private String marca;
+	private String plataforma;
+	
+	public Jogo(String nome, String dataLancamento, String marca, String plataforma) {
+		this.nome = nome;
+		this.dataLancamento = dataLancamento;
+		this.marca = marca;
+		this.plataforma = plataforma;
+	}
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -19,5 +28,21 @@ public class Jogo {
 	
 	public String getDataLancamento() {
 		return dataLancamento;
+	}
+	
+	public String getMarca() {
+		return marca;
+	}
+	
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	
+	public String getPlataforma() {
+		return plataforma;
+	}
+	
+	public void setPlataforma(String plataforma) {
+		this.plataforma = plataforma;
 	}
 }
