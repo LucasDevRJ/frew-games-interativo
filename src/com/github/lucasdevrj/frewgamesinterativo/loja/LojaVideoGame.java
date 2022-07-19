@@ -10,7 +10,8 @@ public class LojaVideoGame {
 	Scanner entrada = new Scanner(System.in);
 	
 	public void exibeMensagemBoasVindas() {
-		System.out.println("Olá, seja bem-vindo a loja ");
+		System.out.println("Olá, seja bem-vindo a loja " + getNome() + "!");
+		System.out.println("Estamos localizados na " + getEndereco() + ".");
 	}
 	
 	public String getNome() {

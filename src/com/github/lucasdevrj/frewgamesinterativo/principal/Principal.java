@@ -8,5 +8,7 @@ public class Principal {
 		LojaVideoGame loja = new LojaVideoGame();
 		loja.setNome("Frew Games");
 		loja.setEndereco("Rua Avaralto de Moraes - 2300");
+		
+		loja.exibeMensagemBoasVindas();
 	}
 }
