@@ -22,6 +22,22 @@ public class LojaVideoGame {
 		System.out.println("Opção 3 - Acessórios.");
 		System.out.println("Opção 4 - Comprar.");
 		System.out.println("Opção 5 - Sair.");
+		
+		System.out.print("Digite a sua opção: ");
+		int opcao = entrada.nextInt();
+		
+		switch (opcao) {
+			case 1:
+				exibeMenuJogos();
+			break;
+		}
+	}
+	
+	public void exibeMenuJogos() {
+		System.out.println("----------|MENU DE JOGOS|----------");
+		System.out.println("Opção 1 - Jogos de PlayStation.");
+		System.out.println("Opção 2 - Jogos de Xbox.");
+		System.out.println("Opção 3 - Jogos de Nintendo.");
 	}
 	
 	public String getNome() {
