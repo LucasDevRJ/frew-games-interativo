@@ -7,13 +7,15 @@ public class Jogo {
 	private String marca;
 	private String genero;
 	private String plataforma;
+	private float preco;
 	
-	public Jogo(String nome, String dataLancamento, String marca, String genero, String plataforma) {
+	public Jogo(String nome, String dataLancamento, String marca, String genero, String plataforma, float preco) {
 		this.nome = nome;
 		this.dataLancamento = dataLancamento;
 		this.marca = marca;
 		this.genero = genero;
 		this.plataforma = plataforma;
+		this.preco = preco;
 	}
 	
 	public String getNome() {
@@ -34,5 +36,9 @@ public class Jogo {
 	
 	public String getPlataforma() {
 		return plataforma;
+	}
+	
+	public float getPreco() {
+		return preco;
 	}
 }

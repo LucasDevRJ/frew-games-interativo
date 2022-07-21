@@ -90,7 +90,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("Jogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", "PlayStation");
+					Jogo jogo = new Jogo("Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", "PlayStation", 90.00f);
 					this.getJogos().add(jogo);
 					
 				} else if (opcao == 2) {
@@ -112,7 +112,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("Jogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Mortal Kombat Komplete Edition", "10/05/2015","Luta", "TAKE-TWO", "PlayStation");
+					Jogo jogo = new Jogo("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", "PlayStation", 120.00f);
 					this.getJogos().add(jogo);
 					
 				} else if (opcao == 2) {
@@ -123,6 +123,29 @@ public class LojaVideoGame {
 					exibeJogosPlayStation3();
 				}
 				
+			break;
+			
+			case 3:
+				
+				System.out.println("Deseja adicionar o jogo no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Volta para o menu principal.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					System.out.println("Jogo adicionado no carrinho!");
+					Jogo jogo = new Jogo("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", "PlayStation");
+					this.getJogos().add(jogo);
+					
+				} else if (opcao == 2) {
+					exibeMenu();
+					
+				} else {
+					System.out.println("Opção inválida!");
+					exibeJogosPlayStation3();
+				}
+			
 			break;
 		}
 	}
