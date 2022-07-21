@@ -28,6 +28,8 @@ public class LojaVideoGame {
 		System.out.println("Opção 5 - Ver carrinho.");
 		System.out.println("Opção 6 - Sair.");
 		
+		System.out.println("-------------------------------------");
+		
 		System.out.print("Digite a sua opção: ");
 		int opcao = entrada.nextInt();
 		
@@ -43,6 +45,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 1 - Jogos de PlayStation.");
 		System.out.println("Opção 2 - Jogos de Xbox.");
 		System.out.println("Opção 3 - Jogos de Nintendo.");
+		System.out.println("-------------------------------------");
 		
 		System.out.print("Digite a sua opção: ");
 		int opcao = entrada.nextInt();
@@ -59,6 +62,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 1 - Jogos de PlayStation 3.");
 		System.out.println("Opção 2 - Jogos de PlayStation 4.");
 		System.out.println("Opção 3 - Jogos de PlayStation 5.");
+		System.out.println("--------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
 		int opcao = entrada.nextInt();
@@ -77,6 +81,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 3 - God of War Collection.");
 		System.out.println("Opção 4 - Jogo Metal Gear Solid 4: Guns of the Patriots.");
 		System.out.println("Opção 5 - Call of Duty: Black Ops.");
+		System.out.println("----------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
 		int opcao = entrada.nextInt();
