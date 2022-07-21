@@ -26,6 +26,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 3 - Acessórios.");
 		System.out.println("Opção 4 - Comprar.");
 		System.out.println("Opção 5 - Ver carrinho.");
+		System.out.println("Opção 6 - Sair.");
 		
 		System.out.print("Digite a sua opção: ");
 		int opcao = entrada.nextInt();
@@ -135,7 +136,53 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("Jogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", "PlayStation");
+					Jogo jogo = new Jogo("God of War Collection", "13/11/2009","Ação e Aventura", "Sony", "PlayStation", 100.00f);
+					this.getJogos().add(jogo);
+					
+				} else if (opcao == 2) {
+					exibeMenu();
+					
+				} else {
+					System.out.println("Opção inválida!");
+					exibeJogosPlayStation3();
+				}
+			
+			break;
+			
+			case 4:
+				
+				System.out.println("Deseja adicionar o jogo no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Volta para o menu principal.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					System.out.println("Jogo adicionado no carrinho!");
+					Jogo jogo = new Jogo("Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", "PlayStation", 110.00f);
+					this.getJogos().add(jogo);
+					
+				} else if (opcao == 2) {
+					exibeMenu();
+					
+				} else {
+					System.out.println("Opção inválida!");
+					exibeJogosPlayStation3();
+				}
+				
+			break;
+			
+			case 5:
+				
+				System.out.println("Deseja adicionar o jogo no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Volta para o menu principal.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					System.out.println("Jogo adicionado no carrinho!");
+					Jogo jogo = new Jogo("Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", "PlayStation", 82.00f);
 					this.getJogos().add(jogo);
 					
 				} else if (opcao == 2) {
