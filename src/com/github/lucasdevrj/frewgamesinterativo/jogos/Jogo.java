@@ -5,25 +5,19 @@ public class Jogo {
 	private String nome;
 	private String dataLancamento;
 	private String marca;
+	private String genero;
 	private String plataforma;
 	
-	public Jogo(String nome, String dataLancamento, String marca, String plataforma) {
+	public Jogo(String nome, String dataLancamento, String marca, String genero, String plataforma) {
 		this.nome = nome;
 		this.dataLancamento = dataLancamento;
 		this.marca = marca;
+		this.genero = genero;
 		this.plataforma = plataforma;
-	}
-	
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 	
 	public String getNome() {
 		return nome;
-	}
-	
-	public void setDataLancamento(String dataLancamento) {
-		this.dataLancamento = dataLancamento;
 	}
 	
 	public String getDataLancamento() {
@@ -34,15 +28,11 @@ public class Jogo {
 		return marca;
 	}
 	
-	public void setMarca(String marca) {
-		this.marca = marca;
+	public String getGenero() {
+		return genero;
 	}
 	
 	public String getPlataforma() {
 		return plataforma;
-	}
-	
-	public void setPlataforma(String plataforma) {
-		this.plataforma = plataforma;
 	}
 }
