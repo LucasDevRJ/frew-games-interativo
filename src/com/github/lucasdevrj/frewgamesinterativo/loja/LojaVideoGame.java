@@ -204,6 +204,11 @@ public class LojaVideoGame {
 				}
 			
 			break;
+			
+			default:
+				System.out.println("Opção inválida!");
+				exibeJogosPlayStation3();
+			break;
 		}
 	}
 	
