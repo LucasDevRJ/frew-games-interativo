@@ -69,7 +69,11 @@ public class LojaVideoGame {
 		
 		switch (opcao) {
 			case 1:
-			exibeJogosPlayStation3();
+				exibeJogosPlayStation3();
+			break;
+			
+			case 2:
+				exibeJogosPlayStation4();
 			break;
 		}
 	}
@@ -210,6 +214,19 @@ public class LojaVideoGame {
 				exibeJogosPlayStation3();
 			break;
 		}
+	}
+	
+	public void exibeJogosPlayStation4() {
+		System.out.println("\n----------|JOGOS DE PLAYSTATION 3|----------");
+		System.out.println("Opção 1 - Grand Theft Auto V.");
+		System.out.println("Opção 2 - Mortal Kombat Komplete Edition.");
+		System.out.println("Opção 3 - God of War Collection.");
+		System.out.println("Opção 4 - Jogo Metal Gear Solid 4: Guns of the Patriots.");
+		System.out.println("Opção 5 - Call of Duty: Black Ops.");
+		System.out.println("----------------------------------------------");
+		
+		System.out.print("Digite a opção desejada: ");
+		int opcao = entrada.nextInt();
 	}
 	
 	public String getNome() {
