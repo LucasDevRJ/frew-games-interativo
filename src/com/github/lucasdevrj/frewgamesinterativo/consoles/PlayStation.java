@@ -55,7 +55,7 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", 90.00f);
-					loja.getJogos().add(jogo);
+					LojaVideoGame.getJogos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -78,7 +78,7 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", 120.00f);
-					loja.getJogos().add(jogo);
+					LojaVideoGame.getJogos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -102,7 +102,7 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("God of War Collection", "13/11/2009","Ação e Aventura", "Sony",  100.00f);
-					loja.getJogos().add(jogo);
+					LojaVideoGame.getJogos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -126,7 +126,7 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", 110.00f);
-					loja.getJogos().add(jogo);
+					LojaVideoGame.getJogos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -150,7 +150,7 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", 82.00f);
-					loja.getJogos().add(jogo);
+					LojaVideoGame.getJogos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -180,6 +180,6 @@ public class PlayStation {
 		System.out.println("----------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
-		int opcao = entrada.nextInt();
+//		int opcao = entrada.nextInt();
 	}
 }
