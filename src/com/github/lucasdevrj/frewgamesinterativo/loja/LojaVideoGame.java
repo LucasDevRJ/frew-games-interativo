@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
+import com.github.lucasdevrj.frewgamesinterativo.jogos.JogoPlayStation;
 
 public class LojaVideoGame {
 
@@ -147,7 +148,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("God of War Collection", "13/11/2009","Ação e Aventura", "Sony", "PlayStation", 100.00f);
+					Jogo jogo = new JogoPlayStation("God of War Collection", "13/11/2009","Ação e Aventura", "Sony",  100.00f);
 					this.getJogos().add(jogo);
 					exibeMenu();
 					
