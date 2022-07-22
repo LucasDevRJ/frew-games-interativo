@@ -6,7 +6,7 @@ import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
 import com.github.lucasdevrj.frewgamesinterativo.jogos.JogoPlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
-public class PlayStation {
+public class PlayStation3 {
 	
 	static Scanner entrada = new Scanner(System.in);
 	LojaVideoGame loja = new LojaVideoGame();
