@@ -78,7 +78,7 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", 120.00f);
-					this.getJogos().add(jogo);
+					loja.getJogos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -102,11 +102,11 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("God of War Collection", "13/11/2009","Ação e Aventura", "Sony",  100.00f);
-					this.getJogos().add(jogo);
-					exibeMenu();
+					loja.getJogos().add(jogo);
+					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
-					exibeMenu();
+					LojaVideoGame.exibeMenu();
 					
 				} else {
 					System.out.println("Opção inválida!");
@@ -126,11 +126,11 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", 110.00f);
-					this.getJogos().add(jogo);
-					exibeMenu();
+					loja.getJogos().add(jogo);
+					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
-					exibeMenu();
+					LojaVideoGame.exibeMenu();
 					
 				} else {
 					System.out.println("Opção inválida!");
@@ -150,11 +150,11 @@ public class PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", 82.00f);
-					this.getJogos().add(jogo);
-					exibeMenu();
+					loja.getJogos().add(jogo);
+					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
-					exibeMenu();
+					LojaVideoGame.exibeMenu();
 					
 				} else {
 					System.out.println("Opção inválida!");

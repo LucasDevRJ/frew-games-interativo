@@ -10,7 +10,8 @@ public class LojaVideoGame {
 
 	private String nome;
 	private String endereco;
-	ArrayList<Jogo> jogos = new ArrayList<Jogo>();
+	static ArrayList<Jogo> jogos = new ArrayList<Jogo>();
+	private static float precoTotal;
 	
 	static Scanner entrada = new Scanner(System.in);
 	
@@ -38,6 +39,10 @@ public class LojaVideoGame {
 			case 1:
 				exibeMenuJogos();
 			break;
+			
+			case 4:
+				comprar();
+			break;
 		}
 	}
 	
@@ -59,6 +64,23 @@ public class LojaVideoGame {
 		}
 	}
 	
+	public static void comprar() {
+		System.out.println("\n----------|COMPRAS|----------");
+		if (!getJogos().isEmpty()) {
+			System.out.println("Nota Fiscal");
+			for (int i = 0; i < getJogos().size(); i++) {
+				precoTotal += getJogos().get(i).getPreco();
+				System.out.println("Jogo: " + jogos.get(i).getNome());
+				System.out.println("Preço: " + jogos.get(i).getPreco());
+				System.out.println();
+			} 
+			System.out.println("Valor total: R$ " + precoTotal);
+		} else {
+			System.out.println("\nNão tem nada no carrinho!");
+			exibeMenu();
+		}
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -75,7 +97,7 @@ public class LojaVideoGame {
 		this.endereco = endereco;
 	}
 	
-	public ArrayList<Jogo> getJogos() {
+	public static ArrayList<Jogo> getJogos() {
 		return jogos;
 	}
 }
