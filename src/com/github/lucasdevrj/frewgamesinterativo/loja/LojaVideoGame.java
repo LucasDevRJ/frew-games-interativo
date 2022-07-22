@@ -101,7 +101,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", "PlayStation", 90.00f);
+					Jogo jogo = new JogoPlayStation("Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", 90.00f);
 					this.getJogos().add(jogo);
 					exibeMenu();
 					
@@ -124,7 +124,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", "PlayStation", 120.00f);
+					Jogo jogo = new JogoPlayStation("Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", 120.00f);
 					this.getJogos().add(jogo);
 					exibeMenu();
 					
