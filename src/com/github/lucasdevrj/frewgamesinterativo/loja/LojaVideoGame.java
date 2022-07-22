@@ -172,7 +172,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", "PlayStation", 110.00f);
+					Jogo jogo = new JogoPlayStation("Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", 110.00f);
 					this.getJogos().add(jogo);
 					exibeMenu();
 					
@@ -196,7 +196,7 @@ public class LojaVideoGame {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new Jogo("Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", "PlayStation", 82.00f);
+					Jogo jogo = new JogoPlayStation("Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", 82.00f);
 					this.getJogos().add(jogo);
 					exibeMenu();
 					
