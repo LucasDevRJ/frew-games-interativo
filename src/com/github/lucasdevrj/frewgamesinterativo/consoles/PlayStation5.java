@@ -32,8 +32,7 @@ public class PlayStation5 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("Marvel's Spider-Man: Miles Morales", "12/11/2020", "Ação e Aventura",
-						"Insomniac Games", 120.00f);
+				Jogo jogo = new JogoPlayStation("Ratchet & Clank", "10/04/2016", "Plataforma", "Insomniac Games", 160.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
@@ -56,8 +55,7 @@ public class PlayStation5 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("The Last of Us Part II", "19/06/2020", "Ação e Aventura",
-						"NetherRealm Studios", 120.00f);
+				Jogo jogo = new JogoPlayStation("God of War Ragnarök", "09/11/2022", "Ação e Aventura", " Santa Monica Studio", 190.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
@@ -81,8 +79,7 @@ public class PlayStation5 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("Horizon Zero Dawn Complete Edition Hits", "28/02/2017", "Mundo Aberto",
-						"Guerrilla Games", 110.00f);
+				Jogo jogo = new JogoPlayStation("Demon's Souls", "12/11/2020", "Aventura", "Bluepoint Games", 200.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
@@ -106,8 +103,7 @@ public class PlayStation5 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("JRed Dead Redemption 2", "05/07/2008", "Mundo Aberto",
-						"Rockstar Games", 130.00f);
+				Jogo jogo = new JogoPlayStation("Uncharted: Coleção Legado Dos Ladrões", "28/01/2008", "Mundo Aberto", "Naughty Dogs", 190.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
@@ -131,7 +127,7 @@ public class PlayStation5 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("Days Gone", "26/04/2019", "Mundo Aberto", "Bend Studio", 95.00f);
+				Jogo jogo = new JogoPlayStation("Horizon Forbidden West", "18/02/2022", "Ação e Aventura", "Guerrilla Games", 170.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
