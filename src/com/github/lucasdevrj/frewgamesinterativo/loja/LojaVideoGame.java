@@ -3,7 +3,7 @@ package com.github.lucasdevrj.frewgamesinterativo.loja;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation3;
+import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
 
 public class LojaVideoGame {
@@ -58,7 +58,7 @@ public class LojaVideoGame {
 		
 		switch (opcao) {
 			case 1:
-				PlayStation3.exibeJogosPlayStation();
+				PlayStation.exibeJogosPlayStation();
 			break;
 		}
 	}

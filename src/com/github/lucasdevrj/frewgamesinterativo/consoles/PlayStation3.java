@@ -8,32 +8,11 @@ import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
 public class PlayStation3 extends PlayStation {
 	
-	public PlayStation3(String nome, String processador, int armazenamento, String cor, float preco) {
-		super(nome, processador, armazenamento, cor, preco);
-	}
-
 	static Scanner entrada = new Scanner(System.in);
 	LojaVideoGame loja = new LojaVideoGame();
-
-	public static void exibeJogosPlayStation() {
-		System.out.println("\n----------|JOGOS DE PLAYSTATION|----------");
-		System.out.println("Opção 1 - Jogos de PlayStation 3.");
-		System.out.println("Opção 2 - Jogos de PlayStation 4.");
-		System.out.println("Opção 3 - Jogos de PlayStation 5.");
-		System.out.println("--------------------------------------------");
-		
-		System.out.print("Digite a opção desejada: ");
-		int opcao = entrada.nextInt();
-		
-		switch (opcao) {
-			case 1:
-				exibeJogosPlayStation3();
-			break;
-			
-			case 2:
-				PlayStation4.exibeJogosPlayStation4();
-			break;
-		}
+	
+	public PlayStation3(String nome, String processador, int armazenamento, String cor, float preco) {
+		super(nome, processador, armazenamento, cor, preco);
 	}
 	
 	public static void exibeJogosPlayStation3() {
