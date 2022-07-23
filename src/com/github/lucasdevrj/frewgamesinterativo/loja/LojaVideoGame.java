@@ -10,7 +10,7 @@ public class LojaVideoGame {
 
 	private String nome;
 	private String endereco;
-	static ArrayList<Jogo> jogos = new ArrayList<Jogo>();
+	static ArrayList<Object> jogos = new ArrayList<Object>();
 	private static float precoTotal;
 	
 	static Scanner entrada = new Scanner(System.in);
@@ -42,6 +42,10 @@ public class LojaVideoGame {
 			
 			case 4:
 				comprar();
+			break;
+			
+			case 5:
+				exibeProdutosCarrinho();
 			break;
 		}
 	}
@@ -77,6 +81,13 @@ public class LojaVideoGame {
 		} else {
 			System.out.println("\nNão tem nada no carrinho!");
 			exibeMenu();
+		}
+	}
+	
+	public static void exibeProdutosCarrinho() {
+		if (!getJogos().isEmpty()) {
+			System.out.println("----------|CARRINHO|---------");
+			for (int i = 0; i < )
 		}
 	}
 	
