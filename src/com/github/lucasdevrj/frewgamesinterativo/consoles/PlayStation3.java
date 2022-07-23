@@ -6,7 +6,7 @@ import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
 import com.github.lucasdevrj.frewgamesinterativo.jogos.JogoPlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
-public class PlayStation3 extends Console{
+public class PlayStation3 extends PlayStation {
 	
 	public PlayStation3(String nome, String processador, int armazenamento, String cor, float preco) {
 		super(nome, processador, armazenamento, cor, preco);

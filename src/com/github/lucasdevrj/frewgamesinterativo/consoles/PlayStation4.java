@@ -2,7 +2,7 @@ package com.github.lucasdevrj.frewgamesinterativo.consoles;
 
 import java.util.Scanner;
 
-public class PlayStation4 extends Console {
+public class PlayStation4 extends PlayStation {
 	
 	static Scanner entrada = new Scanner(System.in);
 
