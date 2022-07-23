@@ -5,12 +5,13 @@ import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
+import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
 
 public class LojaVideoGame {
 
 	private String nome;
 	private String endereco;
-	static ArrayList<Object> jogos = new ArrayList<Object>();
+	static ArrayList<Produto> produtos = new ArrayList<Produto>();
 	private static float precoTotal;
 	
 	static Scanner entrada = new Scanner(System.in);
@@ -73,8 +74,8 @@ public class LojaVideoGame {
 			System.out.println("Nota Fiscal");
 			for (int i = 0; i < getJogos().size(); i++) {
 				precoTotal += getJogos().get(i).getPreco();
-				System.out.println("Jogo: " + jogos.get(i).getNome());
-				System.out.println("Preço: " + jogos.get(i).getPreco());
+				System.out.println("Jogo: " + produtos.get(i).getNome());
+				System.out.println("Preço: " + produtos.get(i).getPreco());
 				System.out.println();
 			} 
 			System.out.println("Valor total: R$ " + precoTotal);
@@ -85,9 +86,11 @@ public class LojaVideoGame {
 	}
 	
 	public static void exibeProdutosCarrinho() {
-		if (!getJogos().isEmpty()) {
+		if (!getProdutos().isEmpty()) {
 			System.out.println("----------|CARRINHO|---------");
-			for (int i = 0; i < )
+			for (int i = 0; i < getProdutos().size(); i++) {
+				
+			}
 		}
 	}
 	
@@ -107,7 +110,7 @@ public class LojaVideoGame {
 		this.endereco = endereco;
 	}
 	
-	public static ArrayList<Jogo> getJogos() {
-		return jogos;
+	public static ArrayList<Produto> getProdutos() {
+		return produtos;
 	}
 }

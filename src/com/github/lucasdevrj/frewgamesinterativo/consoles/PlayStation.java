@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public abstract class PlayStation extends Console {
 	
-	static Scanner entrada = new Scanner(System.in);
-
-	public PlayStation(String nome, String processador, int armazenamento, String cor, float preco) {
-		super(nome, processador, armazenamento, cor, preco);
+	public PlayStation(int codigo, String nome, String modelo, float preco, String processador, int armazenamento) {
+		super(codigo, nome, modelo, preco, processador, armazenamento);
 	}
+
+	static Scanner entrada = new Scanner(System.in);
 	
 	public static void exibeJogosPlayStation() {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION|----------");

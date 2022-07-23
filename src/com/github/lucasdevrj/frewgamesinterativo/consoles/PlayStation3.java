@@ -8,12 +8,12 @@ import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
 public class PlayStation3 extends PlayStation {
 	
+	public PlayStation3(int codigo, String nome, String modelo, float preco, String processador, int armazenamento) {
+		super(codigo, nome, modelo, preco, processador, armazenamento);
+	}
+
 	static Scanner entrada = new Scanner(System.in);
 	LojaVideoGame loja = new LojaVideoGame();
-	
-	public PlayStation3(String nome, String processador, int armazenamento, String cor, float preco) {
-		super(nome, processador, armazenamento, cor, preco);
-	}
 	
 	public static void exibeJogosPlayStation3() {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION 3|----------");

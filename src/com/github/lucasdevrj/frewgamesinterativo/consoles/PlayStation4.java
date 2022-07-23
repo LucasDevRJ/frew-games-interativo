@@ -10,10 +10,6 @@ public class PlayStation4 extends PlayStation {
 
 	static Scanner entrada = new Scanner(System.in);
 
-	public PlayStation4(String nome, String processador, int armazenamento, String cor, float preco) {
-		super(nome, processador, armazenamento, cor, preco);
-	}
-
 	public static void exibeJogosPlayStation4() {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION 4|----------");
 		System.out.println("Opção 1 - Marvel's Spider-Man: Miles Morales.");

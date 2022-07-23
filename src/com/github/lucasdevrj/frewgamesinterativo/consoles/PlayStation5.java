@@ -6,8 +6,8 @@ import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
 public class PlayStation5 extends PlayStation {
 
-	public PlayStation5(String nome, String processador, int armazenamento, String cor, float preco) {
-		super(nome, processador, armazenamento, cor, preco);
+	public PlayStation5(int codigo, String nome, String modelo, float preco, String processador, int armazenamento) {
+		super(codigo, nome, modelo, preco, processador, armazenamento);
 	}
 
 	public static void exibeJogosPlayStation5() {
