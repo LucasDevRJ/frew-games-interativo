@@ -8,11 +8,11 @@ public class PlayStation4 extends Console {
 	
 	public static void exibeJogosPlayStation4() {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION 4|----------");
-		System.out.println("Opção 1 - Grand Theft Auto V.");
-		System.out.println("Opção 2 - Mortal Kombat Komplete Edition.");
+		System.out.println("Opção 1 - Marvel's Spider-Man: Miles Morales.");
+		System.out.println("Opção 2 - The Last of Us Part II.");
 		System.out.println("Opção 3 - God of War Collection.");
-		System.out.println("Opção 4 - Jogo Metal Gear Solid 4: Guns of the Patriots.");
-		System.out.println("Opção 5 - Call of Duty: Black Ops.");
+		System.out.println("Opção 4 - Red Dead Redemption 2.");
+		System.out.println("Opção 5 - Days Gone.");
 		System.out.println("----------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
