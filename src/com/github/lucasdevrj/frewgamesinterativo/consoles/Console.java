@@ -1,6 +1,8 @@
 package com.github.lucasdevrj.frewgamesinterativo.consoles;
 
-public abstract class Console {
+import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
+
+public abstract class Console extends Produto {
 
 	private String nome;
 	private String processador;
@@ -8,12 +10,9 @@ public abstract class Console {
 	private String cor;
 	private float preco;
 	
-	public Console(String nome, String processador, int armazenamento, String cor, float preco) {
-		this.nome = nome;
-		this.processador = processador;
-		this.armazenamento = armazenamento;
-		this.cor = cor;
-		this.preco = preco;
+	public Console(int codigo, String nome, String modelo) {
+		super(codigo, nome, modelo);
+		
 	}
 	
 	public String getNome() {
