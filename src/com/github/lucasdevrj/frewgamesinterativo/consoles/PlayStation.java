@@ -28,6 +28,10 @@ public abstract class PlayStation extends Console {
 			case 2:
 				PlayStation4.exibeJogosPlayStation4();
 			break;
+			
+			case 3:
+				PlayStation5.exibeJogosPlayStation5();
+			break;
 		}
 	}
 
