@@ -4,19 +4,13 @@ import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
 
 public abstract class Console extends Produto {
 
-	private String nome;
 	private String processador;
 	private int armazenamento;
-	private String cor;
-	private float preco;
 	
-	public Console(int codigo, String nome, String modelo) {
-		super(codigo, nome, modelo);
-		
-	}
-	
-	public String getNome() {
-		return nome;
+	public Console(int codigo, String nome, String modelo, float preco, String processador, int armazenamento) {
+		super(codigo, nome, modelo, preco);
+		this.processador = processador;
+		this.armazenamento = armazenamento;
 	}
 	
 	public String getProcessador() {
@@ -25,13 +19,5 @@ public abstract class Console extends Produto {
 	
 	public int getArmazenamento() {
 		return armazenamento;
-	}
-	
-	public String getCor() {
-		return cor;
-	}
-	
-	public float getPreco() {
-		return preco;
 	}
 }
