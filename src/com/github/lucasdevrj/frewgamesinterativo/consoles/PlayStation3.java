@@ -38,7 +38,7 @@ public class PlayStation3 extends PlayStation {
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation("Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", 90.00f);
-					LojaVideoGame.getJogos().add(jogo);
+					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
