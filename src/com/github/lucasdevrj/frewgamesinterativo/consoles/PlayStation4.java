@@ -1,6 +1,10 @@
 package com.github.lucasdevrj.frewgamesinterativo.consoles;
 
+import java.util.Scanner;
+
 public class PlayStation4 extends Console {
+	
+	static Scanner entrada = new Scanner(System.in);
 
 	public PlayStation4(String nome, String processador, int armazenamento, String cor, float preco) {
 		super(nome, processador, armazenamento, cor, preco);
@@ -16,7 +20,7 @@ public class PlayStation4 extends Console {
 		System.out.println("----------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
-//		int opcao = entrada.nextInt();
+		int opcao = entrada.nextInt();
 	}
 
 }
