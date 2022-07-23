@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation;
-import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
 import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
 
 public class LojaVideoGame {
@@ -70,10 +69,10 @@ public class LojaVideoGame {
 	
 	public static void comprar() {
 		System.out.println("\n----------|COMPRAS|----------");
-		if (!getJogos().isEmpty()) {
+		if (!getProdutos().isEmpty()) {
 			System.out.println("Nota Fiscal");
-			for (int i = 0; i < getJogos().size(); i++) {
-				precoTotal += getJogos().get(i).getPreco();
+			for (int i = 0; i < getProdutos().size(); i++) {
+				precoTotal += getProdutos().get(i).getPreco();
 				System.out.println("Jogo: " + produtos.get(i).getNome());
 				System.out.println("Preço: " + produtos.get(i).getPreco());
 				System.out.println();
@@ -89,8 +88,16 @@ public class LojaVideoGame {
 		if (!getProdutos().isEmpty()) {
 			System.out.println("----------|CARRINHO|---------");
 			for (int i = 0; i < getProdutos().size(); i++) {
-				
-			}
+				System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
+				System.out.println("Código do produto: " + getProdutos().get(i).getCodigo());
+				System.out.println("Preço do produto: " + getProdutos().get(i).getPreco());
+				System.out.println();
+			} 
+			System.out.printf("Preço total dos produtos: R$ %.2f", precoTotal);
+			System.out.println("----------------------------");
+		} else {
+			System.out.println("Carrinho esta vazio!");
+			exibeMenu();
 		}
 	}
 	
