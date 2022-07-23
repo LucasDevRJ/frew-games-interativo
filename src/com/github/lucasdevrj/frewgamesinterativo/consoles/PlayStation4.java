@@ -107,8 +107,7 @@ public class PlayStation4 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008",
-						"Ação e Aventura", "KONAMI", 110.00f);
+				Jogo jogo = new JogoPlayStation("JRed Dead Redemption 2", "05/07/2008", "Mundo Aberto", "Rockstar Games", 130.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
@@ -132,8 +131,7 @@ public class PlayStation4 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("Call of Duty: Black Ops", "05/07/2010", "Ação e Aventura",
-						"Activision", 82.00f);
+				Jogo jogo = new JogoPlayStation("Days Gone", "26/04/2019", "Mundo Aberto", "Bend Studio", 95.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
