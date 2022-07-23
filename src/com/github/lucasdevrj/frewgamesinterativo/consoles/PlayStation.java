@@ -3,9 +3,9 @@ package com.github.lucasdevrj.frewgamesinterativo.consoles;
 import java.util.Scanner;
 
 public abstract class PlayStation extends Console {
-	
-	public PlayStation(int codigo, String nome, String modelo, float preco, String processador, int armazenamento) {
-		super(codigo, nome, modelo, preco, processador, armazenamento);
+
+	public PlayStation(int codigo, String nome, String modelo, String dataLancamento, String marca, float preco) {
+		super(codigo, nome, modelo, dataLancamento, marca, preco);
 	}
 
 	static Scanner entrada = new Scanner(System.in);

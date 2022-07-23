@@ -7,10 +7,8 @@ public abstract class Console extends Produto {
 	private String processador;
 	private int armazenamento;
 	
-	public Console(int codigo, String nome, String modelo, float preco, String processador, int armazenamento) {
-		super(codigo, nome, modelo, preco);
-		this.processador = processador;
-		this.armazenamento = armazenamento;
+	public Console(int codigo, String nome, String modelo, String dataLancamento, String marca, float preco) {
+		super(codigo, nome, modelo, dataLancamento, marca, preco);
 	}
 	
 	public String getProcessador() {

@@ -7,6 +7,10 @@ import com.github.lucasdevrj.frewgamesinterativo.jogos.JogoPlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
 public class PlayStation4 extends PlayStation {
+	
+	public PlayStation4(int codigo, String nome, String modelo, String dataLancamento, String marca, float preco) {
+		super(codigo, nome, modelo, dataLancamento, marca, preco);
+	}
 
 	static Scanner entrada = new Scanner(System.in);
 

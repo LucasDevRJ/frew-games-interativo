@@ -2,8 +2,7 @@ package com.github.lucasdevrj.frewgamesinterativo.jogos;
 
 public class JogoPlayStation extends Jogo {
 
-	public JogoPlayStation(String nome, String dataLancamento, String marca, String genero, float preco) {
-		super(nome, dataLancamento, marca, genero, preco);
+	public JogoPlayStation(int codigo, String nome, String modelo, String dataLancamento, String marca, float preco) {
+		super(codigo, nome, modelo, dataLancamento, marca, preco);
 	}
-
 }
