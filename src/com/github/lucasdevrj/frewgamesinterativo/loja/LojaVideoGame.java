@@ -58,8 +58,7 @@ public class LojaVideoGame {
 		
 		switch (opcao) {
 			case 1:
-				PlayStation3 ps = new PlayStation3();
-				ps.exibeJogosPlayStation();
+				PlayStation3.exibeJogosPlayStation();
 			break;
 		}
 	}

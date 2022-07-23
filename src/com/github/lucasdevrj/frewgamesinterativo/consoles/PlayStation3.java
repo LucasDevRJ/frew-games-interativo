@@ -15,7 +15,7 @@ public class PlayStation3 extends Console{
 	static Scanner entrada = new Scanner(System.in);
 	LojaVideoGame loja = new LojaVideoGame();
 
-	public void exibeJogosPlayStation() {
+	public static void exibeJogosPlayStation() {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION|----------");
 		System.out.println("Opção 1 - Jogos de PlayStation 3.");
 		System.out.println("Opção 2 - Jogos de PlayStation 4.");
@@ -31,12 +31,12 @@ public class PlayStation3 extends Console{
 			break;
 			
 			case 2:
-				exibeJogosPlayStation4();
+				PlayStation4.exibeJogosPlayStation4();
 			break;
 		}
 	}
 	
-	public void exibeJogosPlayStation3() {
+	public static void exibeJogosPlayStation3() {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION 3|----------");
 		System.out.println("Opção 1 - Grand Theft Auto V.");
 		System.out.println("Opção 2 - Mortal Kombat Komplete Edition.");
@@ -172,18 +172,5 @@ public class PlayStation3 extends Console{
 				exibeJogosPlayStation3();
 			break;
 		}
-	}
-	
-	public static void exibeJogosPlayStation4() {
-		System.out.println("\n----------|JOGOS DE PLAYSTATION 3|----------");
-		System.out.println("Opção 1 - Grand Theft Auto V.");
-		System.out.println("Opção 2 - Mortal Kombat Komplete Edition.");
-		System.out.println("Opção 3 - God of War Collection.");
-		System.out.println("Opção 4 - Jogo Metal Gear Solid 4: Guns of the Patriots.");
-		System.out.println("Opção 5 - Call of Duty: Black Ops.");
-		System.out.println("----------------------------------------------");
-		
-		System.out.print("Digite a opção desejada: ");
-//		int opcao = entrada.nextInt();
 	}
 }
