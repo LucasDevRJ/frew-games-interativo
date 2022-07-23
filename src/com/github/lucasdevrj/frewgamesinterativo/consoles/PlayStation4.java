@@ -18,7 +18,7 @@ public class PlayStation4 extends PlayStation {
 		System.out.println("\n----------|JOGOS DE PLAYSTATION 4|----------");
 		System.out.println("Opção 1 - Marvel's Spider-Man: Miles Morales.");
 		System.out.println("Opção 2 - The Last of Us Part II.");
-		System.out.println("Opção 3 - God of War Collection.");
+		System.out.println("Opção 3 - Horizon Zero Dawn Complete Edition Hits.");
 		System.out.println("Opção 4 - Red Dead Redemption 2.");
 		System.out.println("Opção 5 - Days Gone.");
 		System.out.println("----------------------------------------------");
@@ -59,8 +59,7 @@ public class PlayStation4 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("Mortal Kombat Komplete Edition", "13/02/2011", "Luta",
-						" NetherRealm Studios", 120.00f);
+				Jogo jogo = new JogoPlayStation("The Last of Us Part II", "19/06/2020", "Ação e Aventura", "NetherRealm Studios", 120.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
@@ -84,8 +83,7 @@ public class PlayStation4 extends PlayStation {
 
 			if (opcao == 1) {
 				System.out.println("\nJogo adicionado no carrinho!");
-				Jogo jogo = new JogoPlayStation("God of War Collection", "13/11/2009", "Ação e Aventura", "Sony",
-						100.00f);
+				Jogo jogo = new JogoPlayStation("Horizon Zero Dawn Complete Edition Hits", "28/02/2017", "Mundo Aberto", "Guerrilla Games", 110.00f);
 				LojaVideoGame.getJogos().add(jogo);
 				LojaVideoGame.exibeMenu();
 
