@@ -42,6 +42,7 @@ public abstract class PlayStation extends Console {
 		System.out.println("Opção 1 - PlayStation 3.");
 		System.out.println("Opção 2 - PlayStation 4.");
 		System.out.println("Opção 3 - PlayStation 5.");
+		System.out.println("Opção 4 - Voltar.");
 		System.out.println("--------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
@@ -81,7 +82,7 @@ public abstract class PlayStation extends Console {
 				opcao = entrada.nextInt();
 				
 				if (opcao == 1) {
-					LojaVideoGame.getProdutos().add(ps3);
+					LojaVideoGame.getProdutos().add(ps4);
 					System.out.println("Console adicionado no carrinho!");
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
@@ -115,6 +116,10 @@ public abstract class PlayStation extends Console {
 			break;
 			
 			case 4:
+				LojaVideoGame.exibeMenu();
+			break;
+			
+			default:
 				System.out.println("Opção inválida!");
 				exibeConsolesPlayStation();
 			break;
