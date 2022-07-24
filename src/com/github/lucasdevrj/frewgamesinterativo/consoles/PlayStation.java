@@ -50,7 +50,7 @@ public abstract class PlayStation extends Console {
 		switch (opcao) {
 			case 1:
 				PlayStation3 ps3 = new PlayStation3(1001, "PlayStation 3", "Slim", "11/08/2010", "Sony", 1500.00f);
-				ps3.toString();
+				System.out.println(ps3.toString());
 				
 				System.out.println("Deseja adicionar este console no carrinho?");
 				System.out.println("Opção 1 - Sim.");
@@ -60,6 +60,8 @@ public abstract class PlayStation extends Console {
 				
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps3);
+					System.out.println("Console adicionado no carrinho!");
+					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();
 				} else {

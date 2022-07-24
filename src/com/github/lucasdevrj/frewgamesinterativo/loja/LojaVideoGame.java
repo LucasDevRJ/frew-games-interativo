@@ -83,7 +83,7 @@ public class LojaVideoGame {
 		
 		switch (opcao) {
 			case 1:
-				
+				PlayStation.exibeConsolesPlayStation();
 			break;
 		}
 	}
