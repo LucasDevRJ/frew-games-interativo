@@ -34,5 +34,30 @@ public abstract class PlayStation extends Console {
 			break;
 		}
 	}
-
+	
+	public static void exibeConsolesPlayStation() {
+		System.out.println("\n----------|MODELOS DE PLAYSTATION|----------");
+		System.out.println("Opção 1 - PlayStation 3.");
+		System.out.println("Opção 2 - PlayStation 4.");
+		System.out.println("Opção 3 - PlayStation 5.");
+		System.out.println("--------------------------------------------");
+		
+		System.out.print("Digite a opção desejada: ");
+		int opcao = entrada.nextInt();
+		
+		switch (opcao) {
+			case 1:
+				PlayStation3 ps3 = new PlayStation3(1001, "PlayStation 3", "Slim", "11/08/2010", "Sony", 1500.00f);
+				System.out.println();
+			break;
+			
+			case 2:
+				
+			break;
+			
+			case 3:
+				
+			break;
+		}
+	}
 }

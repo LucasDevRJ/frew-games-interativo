@@ -72,7 +72,20 @@ public class LojaVideoGame {
 	}
 	
 	public static void exibeMenuConsoles() {
+		System.out.println("\n----------|MENU DE CONSOLES|----------");
+		System.out.println("Opção 1 - PlayStation.");
+		System.out.println("Opção 2 - Xbox.");
+		System.out.println("Opção 3 - Nintendo.");
+		System.out.println("-------------------------------------");
 		
+		System.out.print("Digite a sua opção: ");
+		int opcao = entrada.nextInt();
+		
+		switch (opcao) {
+			case 1:
+				
+			break;
+		}
 	}
 	
 	public static void comprar() {

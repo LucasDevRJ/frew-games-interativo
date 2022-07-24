@@ -18,4 +18,9 @@ public abstract class Console extends Produto {
 	public int getArmazenamento() {
 		return armazenamento;
 	}
+	
+	@Override
+	public String toString() {
+		return "Console: " + getNome() + "\nModelo: " + getModelo() + "\nData de Lançamento: " + getDataLancamento() + "\nPreço: R$ " + getPreco();
+	}
 }
