@@ -93,7 +93,30 @@ public abstract class PlayStation extends Console {
 			break;
 			
 			case 3:
+				PlayStation5 ps5 = new PlayStation5(1003, "PlayStation 5", "PlayStation 5", "19/11/2020", "Sony", 2500.00f);
+				System.out.println(ps5.toString());
 				
+				System.out.println("\nDeseja adicionar este console no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Não.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					LojaVideoGame.getProdutos().add(ps5);
+					System.out.println("Console adicionado no carrinho!");
+					LojaVideoGame.exibeMenu();
+				} else if (opcao == 2) {
+					LojaVideoGame.exibeMenuConsoles();
+				} else {
+					System.out.println("Opção inválida!");
+					LojaVideoGame.exibeMenu();
+				}
+			break;
+			
+			case 4:
+				System.out.println("Opção inválida!");
+				exibeConsolesPlayStation();
 			break;
 		}
 	}
