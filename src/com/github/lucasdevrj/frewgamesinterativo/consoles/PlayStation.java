@@ -2,6 +2,8 @@ package com.github.lucasdevrj.frewgamesinterativo.consoles;
 
 import java.util.Scanner;
 
+import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
+
 public abstract class PlayStation extends Console {
 
 	public PlayStation(int codigo, String nome, String modelo, String dataLancamento, String marca, float preco) {
@@ -48,7 +50,22 @@ public abstract class PlayStation extends Console {
 		switch (opcao) {
 			case 1:
 				PlayStation3 ps3 = new PlayStation3(1001, "PlayStation 3", "Slim", "11/08/2010", "Sony", 1500.00f);
-				System.out.println();
+				ps3.toString();
+				
+				System.out.println("Deseja adicionar este console no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Não.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					LojaVideoGame.getProdutos().add(ps3);
+				} else if (opcao == 2) {
+					LojaVideoGame.exibeMenuConsoles();
+				} else {
+					System.out.println("Opção inválida!");
+					LojaVideoGame.exibeMenu();
+				}
 			break;
 			
 			case 2:
