@@ -49,10 +49,10 @@ public abstract class PlayStation extends Console {
 		
 		switch (opcao) {
 			case 1:
-				PlayStation3 ps3 = new PlayStation3(1001, "PlayStation 3", "Slim", "11/08/2010", "Sony", 1500.00f);
+				PlayStation3 ps3 = new PlayStation3(1001, "PlayStation 3", "Slim", "11/08/2010", "Sony", 1200.00f);
 				System.out.println(ps3.toString());
 				
-				System.out.println("Deseja adicionar este console no carrinho?");
+				System.out.println("\nDeseja adicionar este console no carrinho?");
 				System.out.println("Opção 1 - Sim.");
 				System.out.println("Opção 2 - Não.");
 				System.out.print("Digite sua opção: ");
@@ -71,7 +71,25 @@ public abstract class PlayStation extends Console {
 			break;
 			
 			case 2:
+				PlayStation4 ps4 = new PlayStation4(1002, "PlayStation 4", "Pro", "15/11/2013", "Sony", 1800.00f);
+				System.out.println(ps4.toString());
 				
+				System.out.println("\nDeseja adicionar este console no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Não.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					LojaVideoGame.getProdutos().add(ps3);
+					System.out.println("Console adicionado no carrinho!");
+					LojaVideoGame.exibeMenu();
+				} else if (opcao == 2) {
+					LojaVideoGame.exibeMenuConsoles();
+				} else {
+					System.out.println("Opção inválida!");
+					LojaVideoGame.exibeMenu();
+				}
 			break;
 			
 			case 3:

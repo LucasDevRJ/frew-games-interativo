@@ -95,7 +95,7 @@ public class LojaVideoGame {
 			for (int i = 0; i < getProdutos().size(); i++) {
 				precoTotal += getProdutos().get(i).getPreco();
 				System.out.println("Jogo: " + produtos.get(i).getNome());
-				System.out.println("Preço: " + produtos.get(i).getPreco());
+				System.out.printf("\nPreço: R$%.2f", produtos.get(i).getPreco());
 				System.out.println();
 			} 
 			System.out.println("Valor total: R$ " + precoTotal);
@@ -107,7 +107,7 @@ public class LojaVideoGame {
 	
 	public static void exibeProdutosCarrinho() {
 		if (!getProdutos().isEmpty()) {
-			System.out.println("----------|CARRINHO|---------");
+			System.out.println("\n----------|CARRINHO|---------");
 			for (int i = 0; i < getProdutos().size(); i++) {
 				precoTotal += getProdutos().get(i).getPreco();
 				System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
@@ -117,6 +117,7 @@ public class LojaVideoGame {
 			} 
 			System.out.printf("Preço total dos produtos: R$ %.2f", precoTotal);
 			System.out.println("\n----------------------------");
+			exibeMenu();
 		} else {
 			System.out.println("Carrinho esta vazio!");
 			exibeMenu();
