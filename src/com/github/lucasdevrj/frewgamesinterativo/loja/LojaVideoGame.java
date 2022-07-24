@@ -68,6 +68,10 @@ public class LojaVideoGame {
 			case 1:
 				PlayStation.exibeJogosPlayStation();
 			break;
+			
+			case  2:
+				
+			break;
 		}
 	}
 	
