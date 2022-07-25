@@ -39,6 +39,7 @@ public class PlayStation3 extends PlayStation {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(301, "Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", 90.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -62,6 +63,7 @@ public class PlayStation3 extends PlayStation {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(302, "Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", 120.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -86,6 +88,7 @@ public class PlayStation3 extends PlayStation {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(303, "God of War Collection", "13/11/2009","Ação e Aventura", "Sony",  100.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -110,6 +113,7 @@ public class PlayStation3 extends PlayStation {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(304, "Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", 110.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -134,6 +138,7 @@ public class PlayStation3 extends PlayStation {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(305, "Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", 82.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {

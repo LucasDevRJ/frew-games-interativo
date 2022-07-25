@@ -38,6 +38,7 @@ public class PlayStation4 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(401, "Marvel's Spider-Man: Miles Morales", "12/11/2020", "Ação e Aventura", "Insomniac Games", 120.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -61,6 +62,7 @@ public class PlayStation4 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(402, "The Last of Us Part II", "19/06/2020", "Ação e Aventura", "NetherRealm Studios", 120.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -85,6 +87,7 @@ public class PlayStation4 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(403, "Horizon Zero Dawn Complete Edition Hits", "28/02/2017", "Mundo Aberto", "Guerrilla Games", 110.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -109,6 +112,7 @@ public class PlayStation4 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(404, "Red Dead Redemption 2", "05/07/2008", "Mundo Aberto", "Rockstar Games", 130.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -133,6 +137,7 @@ public class PlayStation4 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(405, "Days Gone", "26/04/2019", "Mundo Aberto", "Bend Studio", 95.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {

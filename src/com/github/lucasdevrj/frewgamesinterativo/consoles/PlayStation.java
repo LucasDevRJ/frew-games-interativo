@@ -63,13 +63,7 @@ public abstract class PlayStation extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps3);
 					System.out.println("Console adicionado no carrinho!");
-					
-					for (int i = 0; i < LojaVideoGame.getProdutos().size(); i++) {
-						float precoProduto = LojaVideoGame.getProdutos().get(i).getPreco();
-						LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + precoProduto);
-						System.out.println(LojaVideoGame.getPrecoTotal());
-					}
-					
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + ps3.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -93,12 +87,7 @@ public abstract class PlayStation extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps4);
 					System.out.println("Console adicionado no carrinho!");
-					for (int i = 0; i < LojaVideoGame.getProdutos().size(); i++) {
-						float precoProduto = LojaVideoGame.getProdutos().get(i).getPreco();
-						LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + precoProduto);
-						System.out.println(LojaVideoGame.getPrecoTotal());
-					}
-					
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + ps4.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -122,12 +111,7 @@ public abstract class PlayStation extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps5);
 					System.out.println("Console adicionado no carrinho!");
-					for (int i = 0; i < LojaVideoGame.getProdutos().size(); i++) {
-						float precoProduto = LojaVideoGame.getProdutos().get(i).getPreco();
-						LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + precoProduto);
-						System.out.println(LojaVideoGame.getPrecoTotal());
-					}
-					
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + ps5.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
