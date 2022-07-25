@@ -81,6 +81,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 1 - PlayStation.");
 		System.out.println("Opção 2 - Xbox.");
 		System.out.println("Opção 3 - Nintendo.");
+		System.out.println("Opção 4 - Voltar.");
 		System.out.println("-------------------------------------");
 		
 		System.out.print("Digite a sua opção: ");
@@ -93,6 +94,15 @@ public class LojaVideoGame {
 			
 			case 2:
 				
+			break;
+			
+			case 4:
+				exibeMenu();
+			break;
+			
+			default:
+				System.out.println("Opção inválida!");
+				exibeMenuConsoles();
 			break;
 		}
 	}
