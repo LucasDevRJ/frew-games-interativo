@@ -34,6 +34,7 @@ public class Xbox360 extends Xbox {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(306, "Silent Hill Hd Collection", "20/03/2012", "Terror", "KONAMI", 80.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -57,6 +58,7 @@ public class Xbox360 extends Xbox {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(307, "Deadpool", "25/06/2013","Ação e Aventura", "Activision", 70.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -81,6 +83,7 @@ public class Xbox360 extends Xbox {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(308, "Red Dead Redemption", "03/21/2010","Mundo Aberto", "Rockstar",  90.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -105,6 +108,7 @@ public class Xbox360 extends Xbox {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(309, "Jogo Batman - Arkham Origins", "25/10/2013","Ação e Aventura", " WB Games Montréal", 80.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {
@@ -129,6 +133,7 @@ public class Xbox360 extends Xbox {
 					System.out.println("\nJogo adicionado no carrinho!");
 					Jogo jogo = new JogoPlayStation(310, "Assassin's Creed III", "30/10/2012","Mundo Aberto", "UBISOFT", 87.00f);
 					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
 					
 				} else if (opcao == 2) {

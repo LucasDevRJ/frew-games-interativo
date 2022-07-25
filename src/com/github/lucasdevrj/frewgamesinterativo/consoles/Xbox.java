@@ -37,6 +37,7 @@ public abstract class Xbox extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(xbox360);
 					System.out.println("Console adicionado no carrinho!");
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + xbox360.getPreco());
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();
@@ -59,6 +60,7 @@ public abstract class Xbox extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(xboxOne);
 					System.out.println("Console adicionado no carrinho!");
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + xboxOne.getPreco());
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();
@@ -81,6 +83,7 @@ public abstract class Xbox extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(xboxSeries);
 					System.out.println("Console adicionado no carrinho!");
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + xboxSeries.getPreco());
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();

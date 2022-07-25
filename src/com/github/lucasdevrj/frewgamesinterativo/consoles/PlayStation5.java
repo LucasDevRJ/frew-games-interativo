@@ -34,6 +34,7 @@ public class PlayStation5 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(501, "Ratchet & Clank", "10/04/2016", "Plataforma", "Insomniac Games", 160.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -57,6 +58,7 @@ public class PlayStation5 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(502, "God of War Ragnarök", "09/11/2022", "Ação e Aventura", " Santa Monica Studio", 190.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -81,6 +83,7 @@ public class PlayStation5 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(503, "Demon's Souls", "12/11/2020", "Aventura", "Bluepoint Games", 200.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -105,6 +108,7 @@ public class PlayStation5 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(504, "Uncharted: Coleção Legado Dos Ladrões", "28/01/2008", "Mundo Aberto", "Naughty Dogs", 190.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
@@ -129,6 +133,7 @@ public class PlayStation5 extends PlayStation {
 				System.out.println("\nJogo adicionado no carrinho!");
 				Jogo jogo = new JogoPlayStation(505, "Horizon Forbidden West", "18/02/2022", "Ação e Aventura", "Guerrilla Games", 170.00f);
 				LojaVideoGame.getProdutos().add(jogo);
+				LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 				LojaVideoGame.exibeMenu();
 
 			} else if (opcao == 2) {
