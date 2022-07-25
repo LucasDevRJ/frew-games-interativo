@@ -144,6 +144,7 @@ public class LojaVideoGame {
 			System.out.print("Digite sua opção: ");
 			int opcao = entrada.nextInt();
 			
+			System.out.println("\nProdutos no carrinho.");
 			if (opcao == 1) {
 				for (int i = 0;  i < getProdutos().size(); i++) {
 					System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
@@ -168,10 +169,7 @@ public class LojaVideoGame {
 						exibeMenu();
 					}
 				}
-				
-				
 			}
-			
 			exibeMenu();
 		} else {
 			System.out.println("Carrinho esta vazio!");
