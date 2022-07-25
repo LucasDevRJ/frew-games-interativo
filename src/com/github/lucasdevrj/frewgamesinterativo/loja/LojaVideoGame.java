@@ -75,6 +75,7 @@ public class LojaVideoGame {
 		System.out.println("Opção 1 - Jogos de PlayStation.");
 		System.out.println("Opção 2 - Jogos de Xbox.");
 		System.out.println("Opção 3 - Jogos de Nintendo.");
+		System.out.println("Opção 4 - Voltar.");
 		System.out.println("-------------------------------------");
 		
 		System.out.print("Digite a sua opção: ");
@@ -87,6 +88,10 @@ public class LojaVideoGame {
 			
 			case 2:
 				Xbox.exibeJogosXbox();
+			break;
+			
+			case 4:
+				exibeMenu();
 			break;
 		}
 	}
@@ -195,7 +200,7 @@ public class LojaVideoGame {
 			
 			exibeMenu();
 		} else {
-			System.out.println("Carrinho esta vazio!");
+			System.out.println("\nCarrinho esta vazio!");
 			exibeMenu();
 		}
 	}
