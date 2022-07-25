@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation;
+import com.github.lucasdevrj.frewgamesinterativo.consoles.Xbox;
 import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
 
 public class LojaVideoGame {
@@ -88,6 +89,10 @@ public class LojaVideoGame {
 		switch (opcao) {
 			case 1:
 				PlayStation.exibeConsolesPlayStation();
+			break;
+			
+			case 2:
+				Xbox.exibeJogosXbox();
 			break;
 		}
 	}

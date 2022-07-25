@@ -16,7 +16,7 @@ public class Xbox360 extends Xbox {
 		System.out.println("Opção 2 - Deadpool.");
 		System.out.println("Opção 3 - Red Dead Redemption.");
 		System.out.println("Opção 4 - Jogo Batman - Arkham Origins.");
-		System.out.println("Opção 5 - Assassin's Creed Iii.");
+		System.out.println("Opção 5 - Assassin's Creed III.");
 		System.out.println("----------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
@@ -112,7 +112,7 @@ public class Xbox360 extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosPlayStation3();
+					exibeJogosXbox360();
 				}
 				
 			break;
@@ -127,7 +127,7 @@ public class Xbox360 extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(305, "Call of Duty: Black Ops", "05/07/2010","Ação e Aventura", "Activision", 82.00f);
+					Jogo jogo = new JogoPlayStation(310, "Assassin's Creed III", "30/10/2012","Mundo Aberto", "UBISOFT", 87.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
@@ -136,14 +136,14 @@ public class Xbox360 extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosPlayStation3();
+					exibeJogosXbox360();
 				}
 			
 			break;
 			
 			default:
 				System.out.println("Opção inválida!");
-				exibeJogosPlayStation3();
+				exibeJogosXbox360();
 			break;
 		}
 	}
