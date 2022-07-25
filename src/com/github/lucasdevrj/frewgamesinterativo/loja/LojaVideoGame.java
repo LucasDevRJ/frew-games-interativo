@@ -131,12 +131,11 @@ public class LojaVideoGame {
 		System.out.println("\n----------|COMPRAS|----------");
 		if (!getProdutos().isEmpty()) {
 			for (int i = 0; i < getProdutos().size(); i++) {
-				precoTotal += getProdutos().get(i).getPreco();
 				System.out.println("Jogo: " + produtos.get(i).getNome());
 				System.out.printf("\nPreço: R$%.2f", produtos.get(i).getPreco());
 				System.out.println();
 			} 
-			System.out.println("Valor total: R$ " + precoTotal);
+			System.out.println("Valor total: R$ " + getPrecoTotal());
 			
 			System.out.println("\nQual será a forma de pagamento:");
 			System.out.println("Opção 1 - Dinheiro (10% de desconto).");
@@ -169,7 +168,7 @@ public class LojaVideoGame {
 				System.out.printf("\nValor parcelado: R$ %.2f", valorParcelado);
 			}
 			
-			System.out.println("\nObrigado e volte sempre!");
+			System.out.println("\nObrigado por comprar conosco!");
 			exibeMenu();
 			
 		} else {
@@ -182,16 +181,15 @@ public class LojaVideoGame {
 		if (!getProdutos().isEmpty()) {
 			System.out.println("\n----------|CARRINHO|---------");
 			for (int i = 0; i < getProdutos().size(); i++) {
-				precoTotal += getProdutos().get(i).getPreco();
 				System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
 				System.out.println("Código do produto: " + getProdutos().get(i).getCodigo());
 				System.out.println("Preço do produto: " + getProdutos().get(i).getPreco());
 				System.out.println();
 			} 
-			System.out.printf("Preço total dos produtos: R$ %.2f", precoTotal);
+			System.out.printf("Preço total dos produtos: R$ %.2f", getPrecoTotal());
 			System.out.println("\n----------------------------");
 			
-			System.out.println("Deseja remover algum produto do carrinho?");
+			System.out.println("\nDeseja remover algum produto do carrinho?");
 			System.out.println("Opção 1 - Remover 1 produto.");
 			System.out.println("Opção 2 - Remover todos os produtos.");
 			System.out.println("Opção 3 - Voltar.");
@@ -214,6 +212,7 @@ public class LojaVideoGame {
 					while (codigo != getProdutos().get(i).getCodigo()) {
 						System.out.println("Código inválido!");
 						System.out.print("Digite o código do produto que deseja remover: ");
+						codigo = entrada.nextInt();
 					}
 					
 					if (codigo == getProdutos().get(i).getCodigo()) {
@@ -261,5 +260,13 @@ public class LojaVideoGame {
 	
 	public static ArrayList<Produto> getProdutos() {
 		return produtos;
+	}
+	
+	public static void setPrecoTotal(float precoTotal) {
+		LojaVideoGame.precoTotal = precoTotal;
+	}
+	
+	public static float getPrecoTotal() {
+		return precoTotal;
 	}
 }

@@ -3,6 +3,7 @@ package com.github.lucasdevrj.frewgamesinterativo.consoles;
 import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
+import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
 
 public abstract class PlayStation extends Console {
 
@@ -62,7 +63,15 @@ public abstract class PlayStation extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps3);
 					System.out.println("Console adicionado no carrinho!");
+					
+					for (int i = 0; i < LojaVideoGame.getProdutos().size(); i++) {
+						float precoProduto = LojaVideoGame.getProdutos().get(i).getPreco();
+						LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + precoProduto);
+						System.out.println(LojaVideoGame.getPrecoTotal());
+					}
+					
 					LojaVideoGame.exibeMenu();
+					
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();
 				} else {
@@ -84,7 +93,14 @@ public abstract class PlayStation extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps4);
 					System.out.println("Console adicionado no carrinho!");
+					for (int i = 0; i < LojaVideoGame.getProdutos().size(); i++) {
+						float precoProduto = LojaVideoGame.getProdutos().get(i).getPreco();
+						LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + precoProduto);
+						System.out.println(LojaVideoGame.getPrecoTotal());
+					}
+					
 					LojaVideoGame.exibeMenu();
+					
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();
 				} else {
@@ -106,7 +122,14 @@ public abstract class PlayStation extends Console {
 				if (opcao == 1) {
 					LojaVideoGame.getProdutos().add(ps5);
 					System.out.println("Console adicionado no carrinho!");
+					for (int i = 0; i < LojaVideoGame.getProdutos().size(); i++) {
+						float precoProduto = LojaVideoGame.getProdutos().get(i).getPreco();
+						LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + precoProduto);
+						System.out.println(LojaVideoGame.getPrecoTotal());
+					}
+					
 					LojaVideoGame.exibeMenu();
+					
 				} else if (opcao == 2) {
 					LojaVideoGame.exibeMenuConsoles();
 				} else {

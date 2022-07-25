@@ -41,4 +41,13 @@ public abstract class Produto {
 	public float getPreco() {
 		return preco;
 	}
+	
+	@Override
+	public boolean equals(Object outroProduto) {
+		Produto produto = (Produto) outroProduto;
+		if (produto.getCodigo() != produto.codigo) {
+			return true;
+		} 
+		return false;
+	}
 }
