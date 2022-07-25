@@ -79,7 +79,7 @@ public class Xbox360 extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(303, "God of War Collection", "13/11/2009","Ação e Aventura", "Sony",  100.00f);
+					Jogo jogo = new JogoPlayStation(308, "Red Dead Redemption", "03/21/2010","Mundo Aberto", "Rockstar",  90.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
@@ -88,7 +88,7 @@ public class Xbox360 extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosPlayStation3();
+					exibeJogosXbox360();
 				}
 			
 			break;
@@ -103,7 +103,7 @@ public class Xbox360 extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(304, "Jogo Metal Gear Solid 4: Guns of the Patriots", "05/07/2008","Ação e Aventura", "KONAMI", 110.00f);
+					Jogo jogo = new JogoPlayStation(309, "Jogo Batman - Arkham Origins", "25/10/2013","Ação e Aventura", " WB Games Montréal", 80.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
