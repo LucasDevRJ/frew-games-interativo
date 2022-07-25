@@ -152,6 +152,22 @@ public class LojaVideoGame {
 				System.out.println("Nota Fiscal: " + notaFiscal);
 				System.out.printf("\nValor total: R$ %.2f", precoTotal);
 				System.out.printf("\nValor a pagar: R$ %.2f", desconto);
+				
+			} else if (opcao == 2) {
+				System.out.print("\nDeseja parcelar em quantas vezes (até 12x): ");
+				int vezes = entrada.nextInt();
+				
+				while (vezes <= 0 || vezes > 12) {
+					System.out.println("Número de parcelas inválido!");
+					System.out.print("\nDeseja parcelar em quantas vezes (até 12x): ");
+					vezes = entrada.nextInt();
+				}
+				
+				float valorParcelado = precoTotal / vezes;
+				
+				System.out.println("Compra efetuada com sucesso!");
+				System.out.println("Número de parcelas: " + vezes);
+				System.out.printf("\nValor parcelado: R$ %.2f", valorParcelado);
 			}
 			
 			System.out.println("\nObrigado e volte sempre!");
