@@ -32,7 +32,7 @@ public class Xbox360 extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(301, "Grand Theft Auto V", "10/05/2015", "Ação e Aventura", "TAKE-TWO", 90.00f);
+					Jogo jogo = new JogoPlayStation(306, "Silent Hill Hd Collection", "20/03/2012", "Terror", "KONAMI", 80.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
@@ -41,7 +41,7 @@ public class Xbox360 extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosPlayStation3();
+					exibeJogosXbox360();
 				}
 				
 			break;
@@ -55,7 +55,7 @@ public class Xbox360 extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(302, "Mortal Kombat Komplete Edition", "13/02/2011","Luta", " NetherRealm Studios", 120.00f);
+					Jogo jogo = new JogoPlayStation(307, "Deadpool", "25/06/2013","Ação e Aventura", "Activision", 70.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.exibeMenu();
 					
@@ -64,7 +64,7 @@ public class Xbox360 extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosPlayStation3();
+					exibeJogosXbox360();
 				}
 				
 			break;
