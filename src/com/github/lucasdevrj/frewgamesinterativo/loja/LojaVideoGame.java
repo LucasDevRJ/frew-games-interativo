@@ -159,7 +159,6 @@ public class LojaVideoGame {
 			System.out.print("Digite sua opção: ");
 			int opcao = entrada.nextInt();
 			
-			System.out.println("\nProdutos no carrinho.");
 			if (opcao == 1) {
 				for (int i = 0;  i < getProdutos().size(); i++) {
 					System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
@@ -184,7 +183,16 @@ public class LojaVideoGame {
 						exibeMenu();
 					}
 				}
+				
+			} else if (opcao == 2) {
+				getProdutos().clear();
+				System.out.println("Todos os produtos foram removidos!");
+				exibeMenu();
+				
+			} else if (opcao == 3) {
+				exibeMenu();
 			}
+			
 			exibeMenu();
 		} else {
 			System.out.println("Carrinho esta vazio!");
