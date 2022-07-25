@@ -1,6 +1,7 @@
 package com.github.lucasdevrj.frewgamesinterativo.loja;
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.acessorios.Acessorio;
@@ -130,7 +131,6 @@ public class LojaVideoGame {
 	public static void comprar() {
 		System.out.println("\n----------|COMPRAS|----------");
 		if (!getProdutos().isEmpty()) {
-			System.out.println("Nota Fiscal");
 			for (int i = 0; i < getProdutos().size(); i++) {
 				precoTotal += getProdutos().get(i).getPreco();
 				System.out.println("Jogo: " + produtos.get(i).getNome());
@@ -138,6 +138,25 @@ public class LojaVideoGame {
 				System.out.println();
 			} 
 			System.out.println("Valor total: R$ " + precoTotal);
+			
+			System.out.println("\nQual será a forma de pagamento:");
+			System.out.println("Opção 1 - Dinheiro (10% de desconto).");
+			System.out.println("Opção 2 - Cartão de Crédito.");
+			
+			System.out.print("Digite a opção desejada: ");
+			int opcao = entrada.nextInt();
+			
+			if (opcao == 1) {
+				float desconto = precoTotal - (precoTotal * 0.10f);
+				double notaFiscal = Math.random() * 10;
+				System.out.println("Nota Fiscal: " + notaFiscal);
+				System.out.printf("\nValor total: R$ %.2f", precoTotal);
+				System.out.printf("\nValor a pagar: R$ %.2f", desconto);
+			}
+			
+			System.out.println("\nObrigado e volte sempre!");
+			exibeMenu();
+			
 		} else {
 			System.out.println("\nNão tem nada no carrinho!");
 			exibeMenu();
