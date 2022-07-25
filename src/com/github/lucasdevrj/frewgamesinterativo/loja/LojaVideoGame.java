@@ -3,6 +3,7 @@ package com.github.lucasdevrj.frewgamesinterativo.loja;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.github.lucasdevrj.frewgamesinterativo.cliente.Cliente;
 import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.consoles.Xbox;
 import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
@@ -15,8 +16,12 @@ public class LojaVideoGame {
 	private static float precoTotal;
 	
 	static Scanner entrada = new Scanner(System.in);
+	Cliente cliente = new Cliente();
 	
 	public void exibeMensagemBoasVindas() {
+		System.out.println("Qual é o seu nome?");
+		System.out.print("Digite seu nome: ");
+		
 		System.out.println("Olá, seja bem-vindo a loja " + getNome() + "!");
 		System.out.println("Estamos localizados na " + getEndereco() + ".");
 		exibeMenu();
