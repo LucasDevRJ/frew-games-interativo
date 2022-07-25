@@ -131,9 +131,9 @@ public class LojaVideoGame {
 		System.out.println("\n----------|COMPRAS|----------");
 		if (!getProdutos().isEmpty()) {
 			for (int i = 0; i < getProdutos().size(); i++) {
-				System.out.println("Jogo: " + produtos.get(i).getNome());
+				System.out.print("Jogo: " + produtos.get(i).getNome());
 				System.out.printf("\nPreço: R$%.2f", produtos.get(i).getPreco());
-				System.out.println();
+				System.out.println("\n");
 			} 
 			System.out.println("Valor total: R$ " + getPrecoTotal());
 			
@@ -166,6 +166,7 @@ public class LojaVideoGame {
 				System.out.println("Compra efetuada com sucesso!");
 				System.out.println("Número de parcelas: " + vezes);
 				System.out.printf("\nValor parcelado: R$ %.2f", valorParcelado);
+				getProdutos().clear();
 			}
 			
 			System.out.println("\nObrigado por comprar conosco!");
