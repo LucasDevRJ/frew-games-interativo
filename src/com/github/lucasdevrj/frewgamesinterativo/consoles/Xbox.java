@@ -12,7 +12,7 @@ public abstract class Xbox extends Console {
 	
 	static Scanner entrada = new Scanner(System.in);
 	
-	public static void exibeConsolesPlayStation() {
+	public static void exibeConsolesXbox() {
 		System.out.println("\n----------|MODELOS DE XBOX|----------");
 		System.out.println("Opção 1 - Xbox 360.");
 		System.out.println("Opção 2 - Xbox One.");
@@ -70,7 +70,7 @@ public abstract class Xbox extends Console {
 			
 			case 3:
 				Xbox xboxSeries = new XboxOne(2002, "Xbox Series", "Xbox Series S", "10/11/2020", "Microsoft", 1900.00f);
-				System.out.println(ps5.toString());
+				System.out.println(xboxSeries.toString());
 				
 				System.out.println("\nDeseja adicionar este console no carrinho?");
 				System.out.println("Opção 1 - Sim.");
@@ -79,7 +79,7 @@ public abstract class Xbox extends Console {
 				opcao = entrada.nextInt();
 				
 				if (opcao == 1) {
-					LojaVideoGame.getProdutos().add(ps5);
+					LojaVideoGame.getProdutos().add(xboxSeries);
 					System.out.println("Console adicionado no carrinho!");
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
@@ -96,7 +96,7 @@ public abstract class Xbox extends Console {
 			
 			default:
 				System.out.println("Opção inválida!");
-				exibeConsolesPlayStation();
+				exibeConsolesXbox();
 			break;
 		}
 	}

@@ -113,7 +113,7 @@ public class LojaVideoGame {
 			break;
 			
 			case 2:
-				
+				Xbox.exibeConsolesXbox();
 			break;
 			
 			case 4:
