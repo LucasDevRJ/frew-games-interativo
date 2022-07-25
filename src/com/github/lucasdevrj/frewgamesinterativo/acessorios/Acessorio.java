@@ -19,6 +19,10 @@ public class Acessorio extends Produto {
 		System.out.print("Digite a opção desejada: ");
 		int opcao = entrada.nextInt();
 		
-		
+		switch (opcao) {
+			case 1:
+				Fone.exibeFones();
+			break;
+		}
 	}
 }
