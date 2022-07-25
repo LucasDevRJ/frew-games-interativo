@@ -113,15 +113,15 @@ public abstract class Xbox extends Console {
 		
 		switch (opcao) {
 			case 1:
-				PlayStation3.exibeJogosPlayStation3();
+				Xbox360.exibeJogosXbox360();
 			break;
 			
 			case 2:
-				PlayStation4.exibeJogosPlayStation4();
+				Xbox360.exibeJogosXbox360();
 			break;
 			
 			case 3:
-				PlayStation5.exibeJogosPlayStation5();
+				Xbox360.exibeJogosXbox360();
 			break;
 		}
 	}

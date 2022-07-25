@@ -1,7 +1,6 @@
 package com.github.lucasdevrj.frewgamesinterativo.loja;
 
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 import com.github.lucasdevrj.frewgamesinterativo.acessorios.Acessorio;
