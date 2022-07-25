@@ -70,8 +70,8 @@ public class LojaVideoGame {
 				PlayStation.exibeJogosPlayStation();
 			break;
 			
-			case  2:
-				
+			case 2:
+				Xbox.exibeJogosXbox();
 			break;
 		}
 	}
@@ -92,7 +92,7 @@ public class LojaVideoGame {
 			break;
 			
 			case 2:
-				Xbox.exibeJogosXbox();
+				
 			break;
 		}
 	}
@@ -126,6 +126,42 @@ public class LojaVideoGame {
 			} 
 			System.out.printf("Preço total dos produtos: R$ %.2f", precoTotal);
 			System.out.println("\n----------------------------");
+			
+			System.out.println("Deseja remover algum produto do carrinho?");
+			System.out.println("Opção 1 - Remover 1 produto.");
+			System.out.println("Opção 2 - Remover todos os produtos.");
+			System.out.println("Opção 3 - Voltar.");
+			System.out.print("Digite sua opção: ");
+			int opcao = entrada.nextInt();
+			
+			if (opcao == 1) {
+				for (int i = 0;  i < getProdutos().size(); i++) {
+					System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
+					System.out.println("Código do produto: " + getProdutos().get(i).getCodigo());
+					System.out.println("Preço do produto: " + getProdutos().get(i).getPreco());
+					System.out.println();
+					
+				}
+				
+				for (int i = 0; i < getProdutos().size(); i++) {
+					System.out.print("Digite o código do produto que deseja remover: ");
+					int codigo = entrada.nextInt();
+					
+					while (codigo != getProdutos().get(i).getCodigo()) {
+						System.out.println("Código inválido!");
+						System.out.print("Digite o código do produto que deseja remover: ");
+					}
+					
+					if (codigo == getProdutos().get(i).getCodigo()) {
+						getProdutos().remove(i);
+						System.out.println("Produto removido do carrinho!");
+						exibeMenu();
+					}
+				}
+				
+				
+			}
+			
 			exibeMenu();
 		} else {
 			System.out.println("Carrinho esta vazio!");
