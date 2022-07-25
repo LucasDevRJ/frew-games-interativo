@@ -13,6 +13,7 @@ public class Fone extends Acessorio {
 		System.out.println("Opção 1 - Black Shark Fone.");
 		System.out.println("Opção 2 - BUTFULAKE.");
 		System.out.println("Opção 3 - Orzly.");
+		System.out.println("Opção 4 - Voltar.");
 		System.out.println("---------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
@@ -22,6 +23,18 @@ public class Fone extends Acessorio {
 			Fone fone = new Fone(1101, "Black Shark", "Goblin X1" , "19/11/2021", "Black Shark", 100.00f);
 			System.out.println("Produto adicionado no carrinho!");
 			LojaVideoGame.getProdutos().add(fone);
+			LojaVideoGame.exibeMenu();
+		} else if (opcao == 2) {
+			Fone fone = new Fone(1102, "BUTFULAKE", "GH-1" , "20/03/2019", "BUTFULAKE", 120.00f);
+			System.out.println("Produto adicionado no carrinho!");
+			LojaVideoGame.getProdutos().add(fone);
+			LojaVideoGame.exibeMenu();
+		} else if (opcao == 3) {
+			Fone fone = new Fone(1103, "Orzly", "Hornet RXH-20" , "06/10/2020", "Orzly", 110.00f);
+			System.out.println("Produto adicionado no carrinho!");
+			LojaVideoGame.getProdutos().add(fone);
+			LojaVideoGame.exibeMenu();
+		} else if (opcao == 4) {
 			LojaVideoGame.exibeMenu();
 		}
 	}
