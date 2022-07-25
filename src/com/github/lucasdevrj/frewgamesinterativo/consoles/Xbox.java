@@ -25,8 +25,8 @@ public abstract class Xbox extends Console {
 		
 		switch (opcao) {
 			case 1:
-				PlayStation3 ps3 = new PlayStation3(1001, "PlayStation 3", "Slim", "11/08/2010", "Sony", 1200.00f);
-				System.out.println(ps3.toString());
+				Xbox xbox360 = new Xbox360(2001, "Xbox 360", "Xbox 360 E", "11/02/2013", "Microsoft", 1000.00f);
+				System.out.println(xbox360.toString());
 				
 				System.out.println("\nDeseja adicionar este console no carrinho?");
 				System.out.println("Opção 1 - Sim.");
@@ -35,7 +35,7 @@ public abstract class Xbox extends Console {
 				opcao = entrada.nextInt();
 				
 				if (opcao == 1) {
-					LojaVideoGame.getProdutos().add(ps3);
+					LojaVideoGame.getProdutos().add(xbox360);
 					System.out.println("Console adicionado no carrinho!");
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
@@ -47,7 +47,7 @@ public abstract class Xbox extends Console {
 			break;
 			
 			case 2:
-				PlayStation4 ps4 = new PlayStation4(1002, "PlayStation 4", "Pro", "15/11/2013", "Sony", 1800.00f);
+				Xbox xboxOne = new XboxOne(2002, "Xbox One", "Xbox One S", "15/11/2016", "Microsoft", 1600.00f);
 				System.out.println(ps4.toString());
 				
 				System.out.println("\nDeseja adicionar este console no carrinho?");
