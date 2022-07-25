@@ -48,7 +48,7 @@ public abstract class Xbox extends Console {
 			
 			case 2:
 				Xbox xboxOne = new XboxOne(2002, "Xbox One", "Xbox One S", "15/11/2016", "Microsoft", 1600.00f);
-				System.out.println(ps4.toString());
+				System.out.println(xboxOne.toString());
 				
 				System.out.println("\nDeseja adicionar este console no carrinho?");
 				System.out.println("Opção 1 - Sim.");
@@ -57,7 +57,7 @@ public abstract class Xbox extends Console {
 				opcao = entrada.nextInt();
 				
 				if (opcao == 1) {
-					LojaVideoGame.getProdutos().add(ps4);
+					LojaVideoGame.getProdutos().add(xboxOne);
 					System.out.println("Console adicionado no carrinho!");
 					LojaVideoGame.exibeMenu();
 				} else if (opcao == 2) {
@@ -69,7 +69,7 @@ public abstract class Xbox extends Console {
 			break;
 			
 			case 3:
-				PlayStation5 ps5 = new PlayStation5(1003, "PlayStation 5", "PlayStation 5", "19/11/2020", "Sony", 2500.00f);
+				Xbox xboxSeries = new XboxOne(2002, "Xbox Series", "Xbox Series S", "10/11/2020", "Microsoft", 1900.00f);
 				System.out.println(ps5.toString());
 				
 				System.out.println("\nDeseja adicionar este console no carrinho?");
