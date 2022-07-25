@@ -21,8 +21,9 @@ public class LojaVideoGame {
 	public void exibeMensagemBoasVindas() {
 		System.out.println("Qual é o seu nome?");
 		System.out.print("Digite seu nome: ");
+		cliente.setNome(entrada.next());
 		
-		System.out.println("Olá, seja bem-vindo a loja " + getNome() + "!");
+		System.out.println("\nOlá " + cliente.getNome() + ", seja bem-vindo a loja " + getNome() + "!");
 		System.out.println("Estamos localizados na " + getEndereco() + ".");
 		exibeMenu();
 	}
@@ -56,6 +57,10 @@ public class LojaVideoGame {
 			
 			case 5:
 				exibeProdutosCarrinho();
+			break;
+			
+			case 6:
+				finalizarPrograma();
 			break;
 		}
 	}
@@ -180,6 +185,10 @@ public class LojaVideoGame {
 			System.out.println("Carrinho esta vazio!");
 			exibeMenu();
 		}
+	}
+	
+	public static void finalizarPrograma() {
+		System.out.println("\nVolte sempre!");
 	}
 	
 	public String getNome() {
