@@ -1,5 +1,7 @@
 package com.github.lucasdevrj.frewgamesinterativo.acessorios;
 
+import java.util.Scanner;
+
 import com.github.lucasdevrj.frewgamesinterativo.produto.Produto;
 
 public class Acessorio extends Produto {
@@ -8,7 +10,15 @@ public class Acessorio extends Produto {
 		super(codigo, nome, modelo, dataLancamento, marca, preco);
 	}
 	
+	static Scanner entrada = new Scanner(System.in);
+	
 	public static void exibeAcessorios() {
+		System.out.println("----------|ACESSÓRIOS|----------");
+		System.out.println("Opção 1 - Fone.");
+		
+		System.out.print("Digite a opção desejada: ");
+		int opcao = entrada.nextInt();
+		
 		
 	}
 }
