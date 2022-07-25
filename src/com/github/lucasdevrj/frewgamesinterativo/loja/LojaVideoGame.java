@@ -3,6 +3,7 @@ package com.github.lucasdevrj.frewgamesinterativo.loja;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.github.lucasdevrj.frewgamesinterativo.acessorios.Acessorio;
 import com.github.lucasdevrj.frewgamesinterativo.cliente.Cliente;
 import com.github.lucasdevrj.frewgamesinterativo.consoles.PlayStation;
 import com.github.lucasdevrj.frewgamesinterativo.consoles.Xbox;
@@ -49,6 +50,10 @@ public class LojaVideoGame {
 			
 			case 2:
 				exibeMenuConsoles();
+			break;
+			
+			case 3:
+				Acessorio.exibeAcessorios();
 			break;
 			
 			case 4:
