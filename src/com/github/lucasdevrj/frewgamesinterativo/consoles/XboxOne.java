@@ -2,6 +2,7 @@ package com.github.lucasdevrj.frewgamesinterativo.consoles;
 
 import com.github.lucasdevrj.frewgamesinterativo.jogos.Jogo;
 import com.github.lucasdevrj.frewgamesinterativo.jogos.JogoPlayStation;
+import com.github.lucasdevrj.frewgamesinterativo.jogos.JogoXbox;
 import com.github.lucasdevrj.frewgamesinterativo.loja.LojaVideoGame;
 
 public class XboxOne extends Xbox {
@@ -32,7 +33,7 @@ public class XboxOne extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(306, "Silent Hill Hd Collection", "20/03/2012", "Terror", "KONAMI", 80.00f);
+					Jogo jogo = new JogoXbox(501, "Watch Dogs 2", "09/11/2016", "Mundo Aberto", "Ubisoft", 120.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -42,7 +43,7 @@ public class XboxOne extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosXbox360();
+					exibeJogosXboxOne();
 				}
 				
 			break;
@@ -56,7 +57,7 @@ public class XboxOne extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(307, "Deadpool", "25/06/2013","Ação e Aventura", "Activision", 70.00f);
+					Jogo jogo = new JogoXbox(502, "Far Cry 6", "06/08/2021", "Tiro em primeira pessoa", "Ubisoft", 120.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -66,7 +67,7 @@ public class XboxOne extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosXbox360();
+					exibeJogosXboxOne();
 				}
 				
 			break;
@@ -81,7 +82,7 @@ public class XboxOne extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(308, "Red Dead Redemption", "03/21/2010","Mundo Aberto", "Rockstar",  90.00f);
+					Jogo jogo = new JogoXbox(503, "Battlefield 2042", "12/03/2021","Tiro em primeira pessoa", "Electronic",  130.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -91,7 +92,7 @@ public class XboxOne extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosXbox360();
+					exibeJogosXboxOne();
 				}
 			
 			break;
@@ -106,7 +107,7 @@ public class XboxOne extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(309, "Jogo Batman - Arkham Origins", "25/10/2013","Ação e Aventura", " WB Games Montréal", 80.00f);
+					Jogo jogo = new JogoPlayStation(504, "Batman. Arkham Knight", "23/06/2015","Ação e Aventura", "WB Games Montréal", 130.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -116,9 +117,35 @@ public class XboxOne extends Xbox {
 					
 				} else {
 					System.out.println("Opção inválida!");
-					exibeJogosXbox360();
+					exibeJogosXboxOne();
 				}
 				
 			break;
+			
+			case 5:
+				
+				System.out.println("\nDeseja adicionar o jogo no carrinho?");
+				System.out.println("Opção 1 - Sim.");
+				System.out.println("Opção 2 - Volta para o menu principal.");
+				System.out.print("Digite sua opção: ");
+				opcao = entrada.nextInt();
+				
+				if (opcao == 1) {
+					System.out.println("\nJogo adicionado no carrinho!");
+					Jogo jogo = new JogoPlayStation(505, "The Witcher 3", "18/03/2015","Mundo aberto", "WB Games Montréal", 140.00f);
+					LojaVideoGame.getProdutos().add(jogo);
+					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
+					LojaVideoGame.exibeMenu();
+					
+				} else if (opcao == 2) {
+					LojaVideoGame.exibeMenu();
+					
+				} else {
+					System.out.println("Opção inválida!");
+					exibeJogosXboxOne();
+				}
+				
+			break;
+		}
 	}
 }
