@@ -109,6 +109,7 @@ public abstract class Xbox extends Console {
 		System.out.println("Opção 1 - Jogos de Xbox 360.");
 		System.out.println("Opção 2 - Jogos de Xbox One.");
 		System.out.println("Opção 3 - Jogos de Xbox Series X.");
+		System.out.println("Opção 4 - Voltar.");
 		System.out.println("--------------------------------------------");
 		
 		System.out.print("Digite a opção desejada: ");
@@ -125,6 +126,10 @@ public abstract class Xbox extends Console {
 			
 			case 3:
 				Xbox360.exibeJogosXbox360();
+			break;
+			
+			case 4:
+				LojaVideoGame.exibeMenu();
 			break;
 		}
 	}
