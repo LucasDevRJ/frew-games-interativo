@@ -120,7 +120,7 @@ public abstract class Xbox extends Console {
 			break;
 			
 			case 2:
-				Xbox360.exibeJogosXbox360();
+				XboxOne.exibeJogosXboxOne();
 			break;
 			
 			case 3:

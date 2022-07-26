@@ -198,30 +198,19 @@ public class LojaVideoGame {
 			int opcao = entrada.nextInt();
 			
 			if (opcao == 1) {
-				for (int i = 0;  i < getProdutos().size(); i++) {
-					System.out.println("Nome do produto: " + getProdutos().get(i).getNome());
-					System.out.println("Código do produto: " + getProdutos().get(i).getCodigo());
-					System.out.println("Preço do produto: " + getProdutos().get(i).getPreco());
-					System.out.println();
-					
-				}
+				System.out.print("Digite o código do produto que deseja remover: ");
+				int codigo = entrada.nextInt();
 				
 				for (int i = 0; i < getProdutos().size(); i++) {
-					System.out.print("Digite o código do produto que deseja remover: ");
-					int codigo = entrada.nextInt();
-					
-					while (codigo != getProdutos().get(i).getCodigo()) {
-						System.out.println("Código inválido!");
-						System.out.print("Digite o código do produto que deseja remover: ");
-						codigo = entrada.nextInt();
-					}
-					
 					if (codigo == getProdutos().get(i).getCodigo()) {
+						System.out.println("\nProduto removido!");
 						getProdutos().remove(i);
-						System.out.println("Produto removido do carrinho!");
 						exibeMenu();
-					}
+					} 
 				}
+				
+				System.out.println("Código inválido!");
+				exibeProdutosCarrinho();
 				
 			} else if (opcao == 2) {
 				getProdutos().clear();
