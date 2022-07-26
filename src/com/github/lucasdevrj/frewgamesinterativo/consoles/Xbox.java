@@ -125,7 +125,7 @@ public abstract class Xbox extends Console {
 			break;
 			
 			case 3:
-				Xbox360.exibeJogosXbox360();
+				XboxSeries.exibeJogosXboxSeries();
 			break;
 			
 			case 4:
