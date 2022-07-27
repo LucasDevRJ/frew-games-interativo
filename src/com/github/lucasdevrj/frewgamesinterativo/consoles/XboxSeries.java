@@ -57,7 +57,7 @@ public class XboxSeries extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoXbox(502, "Far Cry 6", "06/08/2021", "Tiro em primeira pessoa", "Ubisoft", 120.00f);
+					Jogo jogo = new JogoXbox(602, "Elden Ring", "25/02/2022", "RPG", "Bandai Namco", 180.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -82,7 +82,7 @@ public class XboxSeries extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoXbox(503, "Battlefield 2042", "12/03/2021","Tiro em primeira pessoa", "Electronic",  130.00f);
+					Jogo jogo = new JogoXbox(603, "Dying Light 2. Stay Human", "14/02/2022","Terror", "Techland",  190.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -107,7 +107,7 @@ public class XboxSeries extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(504, "Batman. Arkham Knight", "23/06/2015","Ação e Aventura", "WB Games Montréal", 130.00f);
+					Jogo jogo = new JogoPlayStation(604, "Batman. Arkham Knight", "23/06/2015","Ação e Aventura", "WB Games Montréal", 190.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
@@ -132,7 +132,7 @@ public class XboxSeries extends Xbox {
 				
 				if (opcao == 1) {
 					System.out.println("\nJogo adicionado no carrinho!");
-					Jogo jogo = new JogoPlayStation(505, "The Witcher 3", "18/03/2015","Mundo aberto", "WB Games Montréal", 140.00f);
+					Jogo jogo = new JogoPlayStation(505, "Lego Star Wars: A Saga Skywalker Deluxe", "18/04/2021","Mundo aberto", "WB Games Montréal", 200.00f);
 					LojaVideoGame.getProdutos().add(jogo);
 					LojaVideoGame.setPrecoTotal(LojaVideoGame.getPrecoTotal() + jogo.getPreco());
 					LojaVideoGame.exibeMenu();
