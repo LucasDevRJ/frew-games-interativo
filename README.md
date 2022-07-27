@@ -4,7 +4,7 @@
 
 ## Sobre
 
-Quis fazer uma homenagem ao meu primeiro projeto feito em Java, então o recriei só que de forma interativa, ou seja, recebendo dados do usuário. No projeto, o usuário poderá comprar jogos, consoles e acessórios. Colocar e remover produtos do carrinho e finalizar programa.
+Quis fazer uma homenagem ao meu primeiro <a href="https://github.com/LucasDevRJ/frewGames">projeto</a> feito em Java, então o recriei só que de forma interativa, ou seja, recebendo dados do usuário. No projeto, o usuário poderá comprar jogos, consoles e acessórios. Colocar e remover produtos do carrinho e finalizar programa.
 
 ![Projeto Autoral](https://img.shields.io/badge/Autoral-Sim-success)
 
