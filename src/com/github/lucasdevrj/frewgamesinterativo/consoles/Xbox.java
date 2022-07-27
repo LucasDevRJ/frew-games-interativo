@@ -131,6 +131,10 @@ public abstract class Xbox extends Console {
 			case 4:
 				LojaVideoGame.exibeMenu();
 			break;
+			
+			default:
+				System.out.println("Opção inválida!");
+			break;
 		}
 	}
 
